@@ -12,7 +12,7 @@ evpi.remote <- function(outputs, nsim) {
 }
 
 evppi.remote <- function(outputs, inputs, pars, se, B, nsim, verbos, method, ...) {
-  model_input <- list(outputs=outputs, inputs=inputs, pars=pars, se=se, B=B, nsim=nsim, vernos=verbos, func='evppi', method=method, etc=...)
+  model_input <- list(outputs=outputs, inputs=inputs, pars=pars, se=se, B=B, nsim=nsim, verbos=verbos, func='evppi', method=method, etc=...)
   res <- model_run(model_name='voiPrism', model_input, api_key='', server='')
   return(res)
 }
