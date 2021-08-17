@@ -11,26 +11,26 @@ evpi.remote <- function(outputs, nsim) {
   return(res)
 }
 
-evppi.remote <- function(outputs, inputs, pars, se, B, nsim, verbos, method, ...) {
-  model_input <- list(outputs=outputs, inputs=inputs, pars=pars, se=se, B=B, nsim=nsim, verbos=verbos, func='evppi', method=method, etc=...)
+evppi.remote <- function(outputs, inputs, pars, se, B, nsim, verbose, method, ...) {
+  model_input <- list(outputs=outputs, inputs=inputs, pars=pars, se=se, B=B, nsim=nsim, verbose=verbose, func='evppi', method=method, etc=...)
   res <- model_run(model_name='voiPrism', model_input, api_key='', server='')
   return(res)
 }
 
-evppi_mc.remote <- function(model_fn, par_fn, pars, nouter, ninner, wtp, mfargs, verbos) {
-  model_input <- list(model_fn=model_fn, par_fn=par_fn, pars=pars, nouter=nouter, ninner=ninner, wtp=wtp, mfargs=mfargs, verbos=verbos, func='evppi_mc')
+evppi_mc.remote <- function(model_fn, par_fn, pars, nouter, ninner, wtp, mfargs, verbose) {
+  model_input <- list(model_fn=model_fn, par_fn=par_fn, pars=pars, nouter=nouter, ninner=ninner, wtp=wtp, mfargs=mfargs, verbose=verbose, func='evppi_mc')
   res <- model_run(model_name='voiPrism', model_input, api_key='', server='')
   return(res)
 }
 
-evsi.remote <- function(outputs, inputs, study, datagen_fn, pars, n, likelihood, analysis_model, analysis_options, decision_model, Q, npreg_method, nsim, verbos, method, ...) {
-  model_input <- list(outputs=outputs, inputs=inputs, study=study, datagen_fn=datagen_fn, pars=pars, n=n, likelihood=likelihood, analysis_model=analysis_model, analysis_options=analysis_options, decision_model=decision_model, Q=Q, npreg_method=npreg_method, nsim, verbos, func='evsi', method=method, etc=...)
+evsi.remote <- function(outputs, inputs, study, datagen_fn, pars, n, likelihood, analysis_model, analysis_options, decision_model, Q, npreg_method, nsim, verbose, method, ...) {
+  model_input <- list(outputs=outputs, inputs=inputs, study=study, datagen_fn=datagen_fn, pars=pars, n=n, likelihood=likelihood, analysis_model=analysis_model, analysis_options=analysis_options, decision_model=decision_model, Q=Q, npreg_method=npreg_method, nsim=nsim, verbose=verbose, func='evsi', method=method, etc=...)
   res <- model_run(model_name='voiPrism', model_input, api_key='', server='')
   return(res)
 }
 
-evsivar.remote <- function(outputs, inputs, study, datagen_fn, pars, n, likelihood, analysis_model, analysis_options, decision_model, Q, npreg_method, nsim, verbos, method, ...) {
-  model_input <- list(outputs=outputs, inputs=inputs, study=study, datagen_fn=datagen_fn, pars=pars, n=n, likelihood=likelihood, analysis_model=analysis_model, analysis_options=analysis_options, decision_model=decision_model, Q=Q, npreg_method=npreg_method, nsim, verbos, func='evsivar', method=method, etc=...)
+evsivar.remote <- function(outputs, inputs, study, datagen_fn, pars, n, likelihood, analysis_model, analysis_options, decision_model, Q, npreg_method, nsim, verbose, method, ...) {
+  model_input <- list(outputs=outputs, inputs=inputs, study=study, datagen_fn=datagen_fn, pars=pars, n=n, likelihood=likelihood, analysis_model=analysis_model, analysis_options=analysis_options, decision_model=decision_model, Q=Q, npreg_method=npreg_method, nsim=nsim, verbose=verbose, func='evsivar', method=method, etc=...)
   res <- model_run(model_name='voiPrism', model_input, api_key='', server='')
   return(res)
 }
