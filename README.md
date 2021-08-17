@@ -6,7 +6,7 @@
 
 
 # peermodels
-The `peermodels` package allows easy access to models hosted on the [Peer Models Network (PMN)](https://www.peermodelsnetwork.com). The Peer Models Network is an initiative to make statistical models that inform healthcare decisions available online, along with educational videos and other resources to help understand how they work. Learn more about PMN by visiting [www.peermodelsnetwork.com](https://www.peermodelsnetwork.com) and the PMN Model Repository page at [models.peermodelsnetwork.com](https://models.peermodelsnetwork.com).
+The `peermodels` package allows easy access to models hosted on the [Peer Models Network (PMN)](https://www.peermodelsnetwork.com). The Peer Models Network is an initiative to make statistical models that inform healthcare decisions available online, along with educational videos and other resources to help understand how they work. Learn more about PMN by visiting [www.peermodelsnetwork.com](https://www.peermodelsnetwork.com) and the PMN Model Repository page at [models.peermodelsnetwork.com](https://models.peermodelsnetwork.com)
 
 This package allows users to directly access models on the cloud and interact with them without worrying about setting up the required software environment and accessing high-performance computing power.
 
